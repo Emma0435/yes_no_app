@@ -15,3 +15,9 @@ A few resources to get you started if this is your first Flutter project:
 For help getting started with Flutter development, view the
 [online documentation](https://docs.flutter.dev/), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
+
+
+-----------------------------------------------------
+#Cosas realizadas en este proyecto guiados por los videos
+1 - Inicialización de la app: crear un botón 
+2 - Crear una clase para la personalización de los temas de la app (colores)
