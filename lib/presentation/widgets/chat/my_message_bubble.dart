@@ -28,7 +28,7 @@ class MyMessageBubble extends StatelessWidget {
         ),
 
         //Le damos espacio entre cada burbuja
-        SizedBox(height: 5),
+        SizedBox(height: 10),
       ],
     );
   }
