@@ -22,3 +22,4 @@ samples, guidance on mobile development, and a full API reference.
 1 - Inicialización de la app: crear un botón 
 2 - Crear una clase para la personalización de los temas de la app (colores)
 3 - Se creó el AppBar en donde se agregó una foto de perfil y un título que en este caso seria el nombre de la persona del chat
+4 - Se creó el área de mensajes, donde creamos un listview el cual es un widget para listar otros widgets, en el futuró serán las burbujas de los mensajes
