@@ -18,6 +18,34 @@ class ChatScreen extends StatelessWidget {
         title: Text('Emma Stone'),
         // centerTitle: true, //Linea para centrar o a la izquierda el título
       ),
+      body: _ChatView(),
+    );
+  }
+}
+
+class _ChatView extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return SafeArea(
+      //Widget que evita que tome espacio de los botones de acción
+      child: Padding(
+        padding: const EdgeInsets.symmetric(horizontal: 10),
+        child: Column(
+          children: [
+            Expanded(
+              //Listview es para crear un listado de widgets, lo limitamos a 100
+              child: ListView.builder(
+                itemCount: 100,
+                itemBuilder: (context, index) {
+                  return Text('Indice: $index');
+                },
+              ),
+            ),
+
+            Text('Mundo'),
+          ],
+        ),
+      ),
     );
   }
 }
