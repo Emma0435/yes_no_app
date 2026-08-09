@@ -26,3 +26,4 @@ samples, guidance on mobile development, and a full API reference.
 5 - Se corrigió un error de organización en archivos. Diseñamos nuestras burbujas del chat, alineandolas a la izquierda, se le dieron un borde redondo y un tamaño con padding y se le definió el color primario según el tema de la aplicación
 6 - Se añadieron las burbujas de chat de ella. Se cambió la burbuja a un color secundario y sus mensajes se muestran al lado izquierdo de la pantalla. Se añadio en su conversación un widget de imagen el cual esta respondiendo a la API https://yesno.wtf/#api, la cual se consultó desde postman para que nos diese una ruta de gif aleatorio 
 7 - Se agregó un mensaje previo si es que la imagen no ha cargado
+8 - Se agregó el diseño de una caja de texto para escribir el mensaje
