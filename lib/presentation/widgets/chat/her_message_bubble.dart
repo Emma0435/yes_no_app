@@ -55,6 +55,16 @@ class _ImageBubble extends StatelessWidget {
             150, //Dejamos altura definida para que siempre sean de un mismo tamaño
         fit: BoxFit
             .cover, //Le decimos que se ajuste al tamaño que yo le estoy dando
+        loadingBuilder: (context, child, loadingProgress) {
+          if (loadingProgress == null) return child;
+
+          return Container(
+            width: size.width * 0.7,
+            height: 150,
+            padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
+            child: const Text('Emma Stone esta mandando una imagen'),
+          );
+        },
       ),
     );
   }
