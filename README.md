@@ -27,3 +27,4 @@ samples, guidance on mobile development, and a full API reference.
 6 - Se añadieron las burbujas de chat de ella. Se cambió la burbuja a un color secundario y sus mensajes se muestran al lado izquierdo de la pantalla. Se añadio en su conversación un widget de imagen el cual esta respondiendo a la API https://yesno.wtf/#api, la cual se consultó desde postman para que nos diese una ruta de gif aleatorio 
 7 - Se agregó un mensaje previo si es que la imagen no ha cargado
 8 - Se agregó el diseño de una caja de texto para escribir el mensaje
+9 - Se agregó funcionalidad a la caja de texto. Guardamos el mensaje en una variable para cuando se presione el botón de enviar, se guarde el valor. Se uso focusNode para darle atención al teclado al momento de escribir; al dar "done" del teclado, se limpia la caja de texto, pero no se quita el teclado, y también la funcionalidad de que se quite el foco hasta que toquemos fuera de la caja de texto

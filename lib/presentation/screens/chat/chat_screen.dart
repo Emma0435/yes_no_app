@@ -49,7 +49,7 @@ class _ChatView extends StatelessWidget {
             ),
 
             //Caja de texto de mensajes
-            const MessageFieldBox(),
+            MessageFieldBox(),
           ],
         ),
       ),
