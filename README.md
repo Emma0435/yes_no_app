@@ -1,30 +1,44 @@
-# yes_no_app
+# yes_no_app 💬
 
-A new Flutter project.
+Aplicación de chat construida con Flutter, desarrollada como proyecto de práctica siguiendo un curso en video. Simula una conversación de chat con burbujas de mensaje diferenciadas por usuario.
 
-## Getting Started
+Por ahora los mensajes son fijos (hardcodeados), tanto los míos como los de "ella". Lo mismo ocurre con el GIF de respuesta: se obtuvo un enlace fijo desde [yesno.wtf](https://yesno.wtf/#api) probado previamente en Postman, en lugar de consumir la API dinámicamente desde la app.
 
-This project is a starting point for a Flutter application.
+## ✨ Características
 
-A few resources to get you started if this is your first Flutter project:
+- **Interfaz de chat personalizada**: AppBar con foto de perfil y nombre del contacto, imitando el diseño de apps de mensajería conocidas.
+- **Burbujas de mensaje diferenciadas**: alineación, color y forma distintos según quién envía el mensaje (usuario vs. contacto), usando el tema de colores definido en la app.
+- **Integración con API externa**: las respuestas del contacto incluyen un GIF obtenido desde la API pública de yesno.wtf.
+- **Estado de carga**: mensaje/placeholder mientras la imagen de la respuesta aún no termina de cargar.
+- **Caja de texto funcional**: entrada de mensajes con manejo de foco de teclado (`FocusNode`), envío mediante el botón o la tecla "done", y limpieza automática del campo tras enviar.
+
+## 🛠️ Tecnologías
+
+- **Flutter / Dart**
+- **API pública**: [yesno.wtf](https://yesno.wtf/#api) (probada previamente con Postman para explorar la ruta de respuesta)
+
+## 📋 Bitácora de desarrollo
+
+Registro de lo realizado en cada etapa del curso:
+
+1. **Inicialización de la app** — Creación del botón inicial del proyecto.
+2. **Tema de la aplicación** — Clase para centralizar la personalización de colores del tema.
+3. **AppBar** — Foto de perfil y título con el nombre de la persona del chat.
+4. **Área de mensajes** — `ListView` como widget contenedor para futuras burbujas de mensaje.
+5. **Burbujas de chat (usuario)** — Corrección de organización de archivos; diseño de burbujas alineadas a la izquierda, con bordes redondeados, padding y color primario del tema.
+6. **Burbujas de chat (contacto)** — Burbujas con color secundario alineadas a la izquierda; integración de un widget de imagen conectado a la API de yesno.wtf para mostrar un GIF aleatorio como respuesta.
+7. **Estado de carga de imagen** — Mensaje previo mostrado mientras la imagen de la respuesta aún no ha cargado.
+8. **Caja de texto (diseño)** — Interfaz para escribir mensajes.
+9. **Caja de texto (funcionalidad)** — Guardado del valor escrito en una variable para enviarlo al presionar el botón de envío; uso de `FocusNode` para gestionar el foco del teclado (limpieza del campo al presionar "done" sin cerrar el teclado, y pérdida de foco al tocar fuera de la caja de texto).
+
+## 🚀 Getting Started
+
+Este proyecto es un punto de partida para una aplicación Flutter.
+
+Recursos útiles si es tu primer proyecto con Flutter:
 
 - [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
 - [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
 - [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
-
-
------------------------------------------------------
-#Cosas realizadas en este proyecto guiados por los videos
-1 - Inicialización de la app: crear un botón 
-2 - Crear una clase para la personalización de los temas de la app (colores)
-3 - Se creó el AppBar en donde se agregó una foto de perfil y un título que en este caso seria el nombre de la persona del chat
-4 - Se creó el área de mensajes, donde creamos un listview el cual es un widget para listar otros widgets, en el futuró serán las burbujas de los mensajes
-5 - Se corrigió un error de organización en archivos. Diseñamos nuestras burbujas del chat, alineandolas a la izquierda, se le dieron un borde redondo y un tamaño con padding y se le definió el color primario según el tema de la aplicación
-6 - Se añadieron las burbujas de chat de ella. Se cambió la burbuja a un color secundario y sus mensajes se muestran al lado izquierdo de la pantalla. Se añadio en su conversación un widget de imagen el cual esta respondiendo a la API https://yesno.wtf/#api, la cual se consultó desde postman para que nos diese una ruta de gif aleatorio 
-7 - Se agregó un mensaje previo si es que la imagen no ha cargado
-8 - Se agregó el diseño de una caja de texto para escribir el mensaje
-9 - Se agregó funcionalidad a la caja de texto. Guardamos el mensaje en una variable para cuando se presione el botón de enviar, se guarde el valor. Se uso focusNode para darle atención al teclado al momento de escribir; al dar "done" del teclado, se limpia la caja de texto, pero no se quita el teclado, y también la funcionalidad de que se quite el foco hasta que toquemos fuera de la caja de texto
+Para más ayuda, consulta la [documentación oficial de Flutter](https://docs.flutter.dev/), que ofrece tutoriales, ejemplos, guías de desarrollo móvil y la referencia completa de la API.
