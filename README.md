@@ -47,3 +47,4 @@ Para más ayuda, consulta la [documentación oficial de Flutter](https://docs.fl
 Aqui empiezan los pasos para la funcionalidad de la aplicación
 1 - Creamos una entidad de los mensajes, para en el futuro guardar si son de ella o mios, el mensaje de texto y el gif
 2 - Creamos una clase que será un gestor de estado de los mensajes. 
+3 - Instalamos el gestor de estado Provider en nuestra aplicación con el comando $flutter pub add provider. Este se instaló en las dependencias del pubspec.yaml. Se realizó una modificación del main para colocar el provider arriba del materialApp, logrando que el provider englobe todo el proyecto por estar en la raíz, por lo que los archivos debajo lo heredarán.
