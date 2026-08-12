@@ -42,3 +42,8 @@ Recursos útiles si es tu primer proyecto con Flutter:
 - [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
 
 Para más ayuda, consulta la [documentación oficial de Flutter](https://docs.flutter.dev/), que ofrece tutoriales, ejemplos, guías de desarrollo móvil y la referencia completa de la API.
+
+-----------------------------------------------------------------------------------------------------------------
+Aqui empiezan los pasos para la funcionalidad de la aplicación
+1 - Creamos una entidad de los mensajes, para en el futuro guardar si son de ella o mios, el mensaje de texto y el gif
+2 - Creamos una clase que será un gestor de estado de los mensajes. 
